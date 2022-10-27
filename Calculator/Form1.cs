@@ -24,5 +24,36 @@ namespace Calculator
             double c = a + b;
             textBox3.Text = c.ToString();
         }
+
+        private void bt2_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(textBox1.Text);
+            double b = double.Parse(textBox2.Text);
+            double c = a - b;
+            textBox3.Text = c.ToString();
+        }
+
+        private void bt3_Click(object sender, EventArgs e)
+        {
+            double a = double.Parse(textBox1.Text);
+            double b = double.Parse(textBox2.Text);
+            double c = a * b;
+            textBox3.Text = c.ToString();
+        }
+
+        private void bt4_Click(object sender, EventArgs e)
+        {
+            try{
+                double a = double.Parse(textBox1.Text);
+                double b = double.Parse(textBox2.Text);
+                double c = a / b;
+                textBox3.Text = c.ToString();
+            }
+            catch (DivideByZeroException)
+            {
+                textBox3 = null;
+            }
+            
+        }
     }
 }
