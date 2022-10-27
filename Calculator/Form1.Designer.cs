@@ -34,7 +34,10 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bt3 = new System.Windows.Forms.Button();
+            this.bt2 = new System.Windows.Forms.Button();
+            this.bt4 = new System.Windows.Forms.Button();
+            this.bt1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -85,22 +88,55 @@
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 2;
             // 
-            // button1
+            // bt3
             // 
-            this.button1.Location = new System.Drawing.Point(282, 186);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 31);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Cong";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bt3.Location = new System.Drawing.Point(282, 186);
+            this.bt3.Name = "bt3";
+            this.bt3.Size = new System.Drawing.Size(60, 31);
+            this.bt3.TabIndex = 3;
+            this.bt3.Text = "*";
+            this.bt3.UseVisualStyleBackColor = true;
+            this.bt3.Click += new System.EventHandler(this.bt3_Click);
+            // 
+            // bt2
+            // 
+            this.bt2.Location = new System.Drawing.Point(168, 186);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(60, 31);
+            this.bt2.TabIndex = 3;
+            this.bt2.Text = "-";
+            this.bt2.UseVisualStyleBackColor = true;
+            this.bt2.Click += new System.EventHandler(this.bt2_Click);
+            // 
+            // bt4
+            // 
+            this.bt4.Location = new System.Drawing.Point(382, 186);
+            this.bt4.Name = "bt4";
+            this.bt4.Size = new System.Drawing.Size(60, 31);
+            this.bt4.TabIndex = 3;
+            this.bt4.Text = "/";
+            this.bt4.UseVisualStyleBackColor = true;
+            this.bt4.Click += new System.EventHandler(this.bt4_Click);
+            // 
+            // bt1
+            // 
+            this.bt1.Location = new System.Drawing.Point(68, 186);
+            this.bt1.Name = "bt1";
+            this.bt1.Size = new System.Drawing.Size(60, 31);
+            this.bt1.TabIndex = 3;
+            this.bt1.Text = "+";
+            this.bt1.UseVisualStyleBackColor = true;
+            this.bt1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt2);
+            this.Controls.Add(this.bt1);
+            this.Controls.Add(this.bt4);
+            this.Controls.Add(this.bt3);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -122,7 +158,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bt3;
+        private System.Windows.Forms.Button bt2;
+        private System.Windows.Forms.Button bt4;
+        private System.Windows.Forms.Button bt1;
     }
 }
 
